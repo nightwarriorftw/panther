@@ -1,5 +1,9 @@
 # CSR
 
+## Watch This
+- [Kickstrater Clone](https://youtu.be/UQqqbmC6iCQ)
+
+
 ## Proposed Features
 - RSS/Twitter Notificiation System/Mailing Systems
 - Google Translate Toolbar 
