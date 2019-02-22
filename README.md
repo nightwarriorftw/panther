@@ -15,6 +15,7 @@
 - Maps Integration (Analysis) 
 - Visitor Counter
 - Feedback 
+- Mobile/Email/PAN verification
 
 Questionable!
 - Event Templates (Sort By Budget)
