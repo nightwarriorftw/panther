@@ -1,12 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import AppHeader from "./common/AppHeader/AppHeader";
+import Album from "./common/EventAlbum/Album";
 
 class App extends Component {
   render() {
     return (
-      <AppHeader />
+      <div>
+        <AppHeader />
+        <div className="Events">
+          <Album />
+        </div>
+      </div>
     );
   }
 }

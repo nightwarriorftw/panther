@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+.Events {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+Events.card {
+  display: inline;
+}
