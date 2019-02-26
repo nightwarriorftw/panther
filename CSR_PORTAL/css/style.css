@@ -1,6 +1,37 @@
 /* ==========================================Signup Modal====================================== */
 
+.su-cont{
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 200px;
+     list-style-type: none;
+    margin-left: 50px;
+}
 
+.su-cat{
+    color: black;
+    border-radius: 50%;
+    border:2px solid #800 ;
+    border-color:black;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    list-style-type: none;
+    transition: 0.6s;
+    background: linear-gradient(#ddd6f3, #faaca8) ;
+    
+}
+.su-cat p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.su-cat:hover{
+    background: linear-gradient(#f2709c, #ff9472);
+    cursor: pointer;
+}
 /* ================================Signup Modal End==================================================== */
 
 
@@ -2271,5 +2302,4 @@ input{
 .foot-lnk{
 	text-align:center;
 }
-
 
