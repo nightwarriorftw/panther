@@ -1,3 +1,9 @@
+/* ==========================================Signup Modal====================================== */
+
+
+/* ================================Signup Modal End==================================================== */
+
+
 /* =============================EmailSubscription======================================*/
 
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
@@ -11,6 +17,26 @@
   background: linear-gradient(#36d1dc,
   #5b86e5);
   color: #000;
+}
+
+.sub-button{
+  background-color:#F73859;
+  height:45px;
+  margin-top: -11px;
+  border: 0;
+  width:60px;
+  border-radius: 5px;
+  opacity: 0.8;
+  box-shadow: 0 0 4px #333333;
+  transition: 0.4s;
+
+}
+.sub-button:hover{
+  background-color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 0 0;
+  
+
 }
 /*============================EndOfEmailSubscription=====================================================*/
 
@@ -301,7 +327,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 120px;
 }
 #fh5co-logo img {
-  height: 100px;
+  height: 90px;
   width: 80px;
   padding: 0px;
   margin-left: -90px;
@@ -2245,3 +2271,5 @@ input{
 .foot-lnk{
 	text-align:center;
 }
+
+

@@ -81,6 +81,15 @@
             });
         });
     </script>
+
+
+<script>
+        $(document).ready(function () {
+            $("#sign-up").click(function () {
+                $('#myModal-signup').modal('show');
+            });
+        });
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -128,9 +137,7 @@
                         <li><a href="Projects.html">Projects</a></li>
                         <li><a href="about.html">Team</a></li>
                         <li><a href="#" id="donate-us">Login</a></li>
-                        <li><a href="#" id="donate-us">Signup</a></li>
-                        <li><a href="http://wiki.codeuino.org/">Wiki</a></li>
-                        <li><a href="https://join.slack.com/t/codeuino/shared_invite/enQtMzcxOTQwNzE4NzcxLWEyNzUxYjI0ZThiNWUyYWI5MzJlMTNmODMxN2NjMTcxODJkZmFhNTVkYmUyOTQ1YzgzNTlmMTVkYzVhMzdmNTQ">Get Involved</a></li>
+                        <li><a href="#" id="sign-up">Signup</a></li>
                     </ul>
                 </div>
             </div>
@@ -357,62 +364,6 @@
     </div>
 
 
-    <div id="fh5co-blog" class="fh5co-bg-section">
-        <div class="container">
-            <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
-                <div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
-                    <span>Thoughts &amp; Ideas</span>
-                    <h2>GET INVOLVED</h2>
-    <p  style="font-family:verdana; color:black;">Believe in something larger than yourself get involved in the big ideas of your time.                   
-                    <br>Want to become part of our family then JOIN us. CODEUINO is a friendly and welcoming community.
-                        Getting involved is a great way to learn skills, have fun, and help to create Free Software.</p>
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                    <div class="fh5co-post">
-
-                        <h3><a href="#">Join our slack Channel</a></h3>
-                        <p class="author"><img src="images/slack.png"
-                                               alt="slack logo">
-                                    Don't Wait, Connect right now  .
-                                    Get united in a common goal  </p>
-                        <form>
-    <a href="https://join.slack.com/t/codeuino/shared_invite/enQtMzcxOTQwNzE4NzcxLWEyNzUxYjI0ZThiNWUyYWI5MzJlMTNmODMxN2NjMTcxODJkZmFhNTVkYmUyOTQ1YzgzNTlmMTVkYzVhMzdmNTQ" class="btn btn-danger">Join Us</a>
-  
-                        </form>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                    <div class="fh5co-post">
-
-                        <h3><a href="#">Documentation</a></h3>
-                        <p class="author"><img src="images/code.png" alt="Codeuino logo">Help to maintain CODEUINO's user and developer documentation. </p>
-
-                  <button type="submit" class="btn btn-danger"  onclick="window.location.href='https://github.com/codeuino/codeuino-docs'">Contribute to documentation</button>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-                    <div class="fh5co-post">
-
-                        <h3><a href="#">Engagement Team</a></h3>
-                        <p class="author"><img src="images/slack.png"
-                                               alt="slack logo"> Works on marketing, outreach, events and websites. It wants your help!</p>
-                        <form>
-<a href="https://join.slack.com/t/codeuino/shared_invite/enQtMzcxOTQwNzE4NzcxLWEyNzUxYjI0ZThiNWUyYWI5MzJlMTNmODMxN2NjMTcxODJkZmFhNTVkYmUyOTQ1YzgzNTlmMTVkYzVhMzdmNTQ" class="btn btn-danger">Join Engagement Team</a>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="fh5co-started" style="background-image:url('./images/back.jpg')">
         <div class="container">
             <div class="row animate-box">
@@ -464,7 +415,7 @@
                     <div class="input-group">
                         <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="required" class="control">
                         <span class="input-group-btn">
-                            <button class="btn btn-danger" type="submit"><i class="fa fa-send"></i>&nbsp;</button>
+                            <button class="sub-button" style="font-size:24px"><i class="fa fa-send"></i></button>
                         </span>
                     </div>
                 
@@ -505,6 +456,186 @@
         </div>
         </div>
     </div>
+
+<!-- =============================================Signup-Modal============================================-->
+
+<div class="modal fade" id="myModal-signup" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="bod" style="height: 300px">
+                
+                    <!--POPUP-->
+                        
+                    <button type="button" class="close" data-dismiss="modal">×</button> 
+        <!-- Modal content-->
+        <div class="modal-content">      
+
+            <div class="modal-body"><div class="registration-popup">
+    <h2 class="csrblock-title"><span>Register as a</span></h2>
+    <ul class="regsttype">
+        <li>
+            <div class="regstlist govt activelist" value="government" title="We are Government Department">
+                <i class="icon-ashok-symbol"></i>
+
+                <strong class="title">We are <br>Government<br>Department</strong>
+
+
+            </div>
+        </li>
+        <li>
+            <div class="regstlist" value="corporate" title="I am Company">
+
+                <i class="icon-building"></i>
+
+                <strong class="title">I am a<br>Company</strong>
+                <span class="selectedlist"><i class="sprite listselectedicon"></i></span>
+
+            </div>
+        </li>
+        <li>
+            <div class="regstlist" value="ngo" title="I ams a Implementing Agency">
+                <i class="icon-save-earth"></i>
+
+                <strong class="title">I am an <br>Implementing<br>Agency</strong>
+                <span class="selectedlist"><i class="sprite listselectedicon"></i></span>
+
+            </div>
+            <!--<span class="vborder"></span>-->
+        </li>
+        <li>
+            <div class="regstlist" value="individual" title="I am an Individual">
+                <i class="icon-user"></i>
+
+                <strong class="title">I am an<br>Individual</strong>
+
+                <span class="selectedlist"><i class="sprite listselectedicon"></i></span>
+            </div>
+           <!-- <span class="vborder"></span>-->
+        </li>
+        <li>
+            <div class="regstlist" value="serviceprovider" title="I am a Service Provider">
+                <i class="icon-service-provider"></i>
+
+                <strong class="title">I am a<br>Service Provider</strong>
+
+                <span class="selectedlist"><i class="sprite listselectedicon"></i></span>
+            </div>
+           <!-- <span class="vborder"></span>-->
+        </li>
+        
+        
+    </ul>
+    <div class="btnblock">
+        <button type="button" class="btn btn-default btn-popup" onclick="usertype();">Continue</button>
+        <p class="title" style="margin-top:10px;"><a href="https://csrrajasthangov.in/admin/site/login" title="Login">  Already a member? Sign In</a></p>
+    </div>
+</div>
+<script>
+    function usertype() {
+        var userType = $('.activelist').attr('value');
+        window.location.href = baseUrl + '/registration/' + userType + '.html';
+    }
+    $(document).ready(function () {
+        $('.regsttype li .regstlist').click(function () {
+            $(".regstlist.activelist").removeClass("activelist");
+            $(this).addClass('activelist');
+
+        });
+    });
+</script>
+
+</div>
+        </div>
+        <!-- </div>-->
+    </div></div><div class="gsc_modal_close" data-gsc_modal-close="gsp_modal_1551193833018"></div></div><div class="gsc_modal " data-gsmodal-name="gsp_modal_1551193833020" data-gsmodal-disableoverlayclick="0"><div class="gsc_modal_wrapper gsc_modal_vmiddle" style="height: auto; max-height: 90%; max-width: 90%; width: 900px;"><div data-gsp-modal="" id="csrSummit" class="modal fade" style="display: none;" data-gsmodal-content="">
+           <!-- <div class="modal-dialog">-->
+                <button type="button" class="close" data-dismiss="modal">×</button> 
+                
+                <div class="modal-content">      
+                        
+                    <div class="modal-body"><div class="registration-popup">
+    <h2 class="csrblock-title"><span>Register as a</span></h2>
+    <ul class="regsttype">
+        <li>
+            <div class="regstlist govt activelist" value="government" title="We are Government Department">
+                <i class="icon-ashok-symbol"></i>
+
+                <strong class="title">We are <br>Government<br>Department</strong>
+
+
+            </div>
+        </li>
+        <li>
+            <div class="regstlist" value="corporate" title="I am Company">
+
+                <i class="icon-building"></i>
+
+                <strong class="title">I am a<br>Company</strong>
+                <span class="selectedlist"><i class="sprite listselectedicon"></i></span>
+
+            </div>
+        </li>
+        <li>
+            <div class="regstlist" value="ngo" title="I ams a Implementing Agency">
+                <i class="icon-save-earth"></i>
+
+                <strong class="title">I am an <br>Implementing<br>Agency</strong>
+                <span class="selectedlist"><i class="sprite listselectedicon"></i></span>
+
+            </div>
+            <!--<span class="vborder"></span>-->
+        </li>
+        <li>
+            <div class="regstlist" value="individual" title="I am an Individual">
+                <i class="icon-user"></i>
+
+                <strong class="title">I am an<br>Individual</strong>
+
+                <span class="selectedlist"><i class="sprite listselectedicon"></i></span>
+            </div>
+           <!-- <span class="vborder"></span>-->
+        </li>
+        <li>
+            <div class="regstlist" value="serviceprovider" title="I am a Service Provider">
+                <i class="icon-service-provider"></i>
+
+                <strong class="title">I am a<br>Service Provider</strong>
+
+                <span class="selectedlist"><i class="sprite listselectedicon"></i></span>
+            </div>
+           <!-- <span class="vborder"></span>-->
+        </li>
+        
+        
+    </ul>
+    <div class="btnblock">
+        <button type="button" class="btn btn-default btn-popup" onclick="usertype();">Continue</button>
+        <p class="title" style="margin-top:10px;"><a href="https://csrrajasthangov.in/admin/site/login" title="Login">  Already a member? Sign In</a></p>
+    </div>
+</div>
+<script>
+    function usertype() {
+        var userType = $('.activelist').attr('value');
+        window.location.href = baseUrl + '/registration/' + userType + '.html';
+    }
+    $(document).ready(function () {
+        $('.regsttype li .regstlist').click(function () {
+            $(".regstlist.activelist").removeClass("activelist");
+            $(this).addClass('activelist');
+
+        });
+    });
+</script>
+                        
+                    <!-- END POPUP-->
+                
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!-- ===========================================================================================signup -->
+
+
 <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 </div>
