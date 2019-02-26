@@ -1,4 +1,53 @@
+/* ========================================Patti============================================ */
+.countdown {
+  text-align: center;
+}
+.countdown div {
+  margin: 20px;
+  display: inline-block;
+  padding: 25px;
+  min-width: 120px;
+  background-color: #F44336;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+.countdown div span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bg-img {
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.bg-img .overlay_dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* =======================================EndOfPatti=========================================== */
+
+
+
 /* ==========================================Signup Modal====================================== */
+
+#donate-us:hover{
+      cursor: pointer;
+}
+
+
+#sign-up:hover{
+  cursor: pointer;
+}
 
 .su-cont{
     display: inline-flex;
@@ -396,7 +445,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li a {
   font-size: 16px;
   padding: 30px 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -452,7 +501,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.has-dropdown .dropdown li a {
   padding: 2px 0;
   display: block;
-  color: #999999;
+  color: #fff;
   line-height: 1.2;
   text-transform: none;
   font-size: 15px;
@@ -554,7 +603,9 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(  #f857a6, #ff5858);
+  background-image: url(/home/nightwarrior-xxx/Documents/SIH/assets/img/bg/slider.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
