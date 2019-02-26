@@ -10,7 +10,7 @@
 
 ## Proposed Features
 - RSS/Twitter Notificiation System/Mailing Systems
-- Google Translate Toolbar 
+- Google Translate Toolbar - https://codepen.io/j_holtslander/pen/PjPWMe
 - Ranking Top Companies
 - Maps Integration (Analysis) 
 - Visitor Counter
