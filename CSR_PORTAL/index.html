@@ -127,7 +127,7 @@
 
                         <li><a href="Projects.html">Projects</a></li>
                         <li><a href="about.html">Team</a></li>
-                        <li><a href="#fh5co-started" id="donate-us">Login</a></li>
+                        <li><a href="#" id="donate-us">Login</a></li>
                         <li><a href="#" id="donate-us">Signup</a></li>
                         <li><a href="http://wiki.codeuino.org/">Wiki</a></li>
                         <li><a href="https://join.slack.com/t/codeuino/shared_invite/enQtMzcxOTQwNzE4NzcxLWEyNzUxYjI0ZThiNWUyYWI5MzJlMTNmODMxN2NjMTcxODJkZmFhNTVkYmUyOTQ1YzgzNTlmMTVkYzVhMzdmNTQ">Get Involved</a></li>
@@ -475,52 +475,34 @@
 
 <!-- POPUP -->
 <div class="container">
-    <!--<h2>Large Modal</h2>-->
-    <!-- Trigger the modal with a button -->
-    <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>-->
+    
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content" style="height: 750px; background: #F0F5F9">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <!--<h4 class="modal-title">Modal Header</h4>-->
-                </div>
-                <div class="modal-body">
+            <div class="bod" style="height: 300px">
+                
                     <!--POPUP-->
-                    <div class="popup-style" id="popup">
-                            <div class="login-wrap">
-                                    <div class="login-html">
-                                             <div class="login-form">
-                                            <div class="sign-in-htm">
-                                                <div class="group">
-                                                    <label for="user" class="label">Username</label>
-                                                    <input id="user" type="text" class="input">
-                                                </div>
-                                                <div class="group">
-                                                    <label for="pass" class="label">Password</label>
-                                                    <input id="pass" type="password" class="input" data-type="password">
-                                                </div>
-                                                <div class="group">
-                                                    <input id="check" type="checkbox" class="check" checked>
-                                                    <label for="check"><span class="icon"></span> Keep me Signed in</label>
-                                                </div>
-                                                <div class="group">
-                                                    <input type="submit" class="button" value="Sign In">
-                                                </div>
-                                                <div class="hr"></div>
-                                                <div class="foot-lnk">
-                                                    <a href="#forgot">Forgot Password?</a>
-                                                </div>
-                                            </div>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                    </div>
-<!-- END POPUP-->
-
+                        
+                        
+                        
+                        <div class="login">
+	                        <h1>Login</h1>
+                                <form method="post">
+    	                            <input type="text" name="u" placeholder="Username" required="required" />
+                                    <input type="password" name="p" placeholder="Password" required="required" />
+                                    <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+                                </form>
+                        </div>
+                        
+                
+                        
+                    <!-- END POPUP-->
+                
+            </div>
+        </div>
+        </div>
+    </div>
 <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 </div>
@@ -542,6 +524,6 @@
 <script src="js/donation-popup.js"></script>
 <!-- Main -->
 <script src="js/main.js"></script>
-
+            
 </body>
 </html>
