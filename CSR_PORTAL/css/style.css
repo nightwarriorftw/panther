@@ -1,12 +1,44 @@
 /* ========================================Patti============================================ */
+.color-light {
+  color: #ffffff !important;
+}
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.pt70 {
+  padding-top: 70px !important;
+}
+
+.pb75 {
+  padding-bottom: 75px !important;
+}
+
+.bg-img {
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+.bg-img .overlay_dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height:200px;
+}
+
 .countdown {
   text-align: center;
+  display: inline-flex;
+  margin-left: -150px;
 }
 .countdown div {
-  margin: 20px;
+  margin: 40px;
   display: inline-block;
-  padding: 25px;
-  min-width: 120px;
+  padding: 40px;
+  width: 300px;
   background-color: #F44336;
   color: #ffffff;
   font-size: 48px;
@@ -20,20 +52,7 @@
   font-weight: 400;
 }
 
-.bg-img {
-  border-radius: 4px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-}
-.bg-img .overlay_dark {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
+
 /* =======================================EndOfPatti=========================================== */
 
 
@@ -307,7 +326,7 @@ input:focus {
 *
 * ======================================================= */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -407,7 +426,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 120px;
 }
 #fh5co-logo img {
-  height: 90px;
+  height: 80px;
   width: 80px;
   padding: 0px;
   margin-left: -90px;
@@ -589,7 +608,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 1000px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -1239,7 +1258,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 150px;
   width: 100%;
   border-radius: 20px;
-  background-image: url(/home/nightwarrior-xxx/Documents/hackathon/CSR-portal/images/profile.jpg);
+  background-image: url(./images/profile.jpg);
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
