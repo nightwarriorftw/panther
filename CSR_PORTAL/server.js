@@ -29,6 +29,7 @@ app.set('view engine', 'hbs')
 // })
 
 app.use('/signup', require('./routes/signup'))
+app.use('/loginNakli', require('./routes/login'))
 app.use('/login', express.static(path.join(__dirname, 'views')))
 app.use('/profile', require('./routes/profile'))
 app.use('/logout', require('./routes/logout'))

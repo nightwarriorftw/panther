@@ -1,6 +1,5 @@
 const route = require('express').Router()
-const passport = require('passport')
-const path = require('path')
+const passport = require('../passport')
 
 const {
     User
@@ -10,7 +9,7 @@ route.get('/', (req, res) => {
     if(req.user) {
         res.redirect('/profile')
     } else {
-        res.sendfile(path.join(__dirname, ".."))
+        res.render('login')
     }
 })
 
