@@ -10,7 +10,7 @@
 
 ## Proposed Features
 - RSS/Twitter Notificiation System/Mailing Systems
-- Google Translate Toolbar - https://codepen.io/j_holtslander/pen/PjPWMe
+- Google Translate Toolbar - https://github.com/HarendraSingh22/GoogleTranslateButton_for_India
 - Ranking Top Companies
 - Maps Integration (Analysis) 
 - Visitor Counter
