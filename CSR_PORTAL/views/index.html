@@ -89,6 +89,16 @@
             });
         });
     </script>
+
+<script>
+    $(document).ready(function () {
+        $("#sign-up-bottom").click(function () {
+            $('#myModal-signup').modal('show');
+        });
+    });
+</script>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -236,8 +246,8 @@
         <div class="container">
             <div class="row row-pb-md">
                 <div class="col-md-8 col-md-offset-2 text-left fh5co-heading  animate-box">
-                    <span>Want to Contribute...</span>
-                    <h2>Categories</h2>
+                    <span>Want to Contribute...?</span>
+                    <h2>Projects</h2>
                 </div>
             </div>
 
@@ -247,7 +257,7 @@
                                      class="img-responsive">
                         <div class="fh5co-copy">
                             <h3>CSR</h3>
-                            <p>Social plateform </p>
+                            <p>Blood Donation Event</p>
                         </div>
                     </a>
                 </div>
@@ -284,7 +294,7 @@
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="https://github.com/codeuino/chat-platform"><img src="images/chat.png" alt="Screenshot of Codeuino chat-platform"
+                        <a href="https://github.com/codeuino/chat-platform"><img src="images/social.PNG" alt="Screenshot of Codeuino chat-platform"
                                          class="img-responsive">
                             <div class="fh5co-copy">
                                 <h3>Chat plateform</h3>
@@ -293,7 +303,7 @@
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="https://github.com/codeuino/Certificate-Generator"><img src="images/cop.jpg" alt="Screenshot of Codeuino Certificate-Generator"
+                        <a href="https://github.com/codeuino/Certificate-Generator"><img src="images/social.PNG" alt="Screenshot of Codeuino Certificate-Generator"
                                          class="img-responsive">
                             <div class="fh5co-copy">
                                 <h3>Certificate Generator</h3>
@@ -316,7 +326,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                            <a href="https://github.com/codeuino/chat-platform"><img src="images/chat.png" alt="Screenshot of Codeuino chat-platform"
+                            <a href="https://github.com/codeuino/chat-platform"><img src="images/social.PNG" alt="Screenshot of Codeuino chat-platform"
                                              class="img-responsive">
                                 <div class="fh5co-copy">
                                     <h3>Chat plateform</h3>
@@ -325,7 +335,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                            <a href="https://github.com/codeuino/Certificate-Generator"><img src="images/cop.jpg" alt="Screenshot of Codeuino Certificate-Generator"
+                            <a href="https://github.com/codeuino/Certificate-Generator"><img src="images/social.PNG" alt="Screenshot of Codeuino Certificate-Generator"
                                              class="img-responsive">
                                 <div class="fh5co-copy">
                                     <h3>Certificate Generator</h3>
@@ -349,7 +359,7 @@
                                 </a>
                             </div>
                             <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                                <a href="https://github.com/codeuino/chat-platform"><img src="images/chat.png" alt="Screenshot of Codeuino chat-platform"
+                                <a href="https://github.com/codeuino/chat-platform"><img src="images/social.PNG" alt="Screenshot of Codeuino chat-platform"
                                                  class="img-responsive">
                                     <div class="fh5co-copy">
                                         <h3>Chat plateform</h3>
@@ -358,7 +368,7 @@
                                 </a>
                             </div>
                             <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                                <a href="https://github.com/codeuino/Certificate-Generator"><img src="images/cop.jpg" alt="Screenshot of Codeuino Certificate-Generator"
+                                <a href="https://github.com/codeuino/Certificate-Generator"><img src="images/social.PNG" alt="Screenshot of Codeuino Certificate-Generator"
                                                  class="img-responsive">
                                     <div class="fh5co-copy">
                                         <h3>Certificate Generator</h3>
@@ -378,11 +388,10 @@
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2>Donate to help us grow more</h2>
-                    <p>We need your donations in running our softwares. Your Monetary support will help us to grow and
-                        contribute more. Moreover it will also help us to create new horizons across the globe.</p>
+                    <h2>Contribute and help us to grow more</h2>
+                    <p>Corporate Social Responsibility is a management concept whereby  companies integrate social and environmental concerns in their business  operations and interactions with their stakeholders. CSR is generally  understood as being the way through which a company achieves a balance  of economic, environmental and social imperatives (“Triple-Bottom-Line-  Approach”), while at the same time addressing the expectations of  shareholders and stakeholders.</p>
                     <p>
-                        <button type="submit" class="btn btn-primary">Donate Us</button>
+                        <button type="submit" class="btn btn-primary" id="sign-up-bottom">Signup</button>
                     </p>
 
 
@@ -405,16 +414,16 @@
             <p>Help to Grow India</p>
             <div class="social-buttons">
                 <ul>
-                    <li class="item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="item"><a href="https://www.facebook.com/indiancsr/"  target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="item"><a href="https://twitter.com/INDIACSR"  target="_blank" ><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
         <div class="links">
             <h3>USEFUL LINKS </h3>
             <ul>
-                <li><a href="#">CSR Rajasthan</a></li>
-                <li><a href="#">CSR Odisha</a></li>
+                <li><a href="https://csrrajasthangov.in/"  target="_blank">CSR Rajasthan</a></li>
+                <li><a href="https://csr.odisha.gov.in/"  target="_blank">CSR Odisha</a></li>
             </ul>
         </div>
         
