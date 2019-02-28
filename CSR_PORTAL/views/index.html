@@ -98,6 +98,14 @@
     });
 </script>
 
+<script>
+        $(document).ready(function () {
+            $("#new-magic").click(function () {
+                $('#newsModal').modal('show');
+            });
+        });
+    </script>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--FontAwesome-->
@@ -147,13 +155,14 @@
                         <li><a href="#fh5co-project">Categories</a></li>
                         <li><a  id="donate-us">Login</a></li>
                         <li><a  id="sign-up">Signup</a></li>
+                        <li><a  id="new-magic">News</a></li>
                     </ul>
                 </div>
             </div>
 
         </div>
     </nav>
-
+    
     <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);"
             data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
@@ -162,8 +171,8 @@
                 <div class="col-md-7 text-left">
                     <div style="text-align:center" class="display-t">
                         <div class="display-tc animate-box" data-animate-effect="fadeInUp">
-                       </div>
-                    </div>
+                               <span style="margin-left: -440px; display: none;" id="news-magic"> <a class="twitter-timeline" data-width="400" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/INDIACSR?ref_src=twsrc%5Etfw">Tweets by INDIACSR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+                        </div>
                 </div>
             </div>
         </div>
@@ -247,7 +256,7 @@
             <div class="row row-pb-md">
                 <div class="col-md-8 col-md-offset-2 text-left fh5co-heading  animate-box">
                     <span>Want to Contribute...?</span>
-                    <h2>Projects</h2>
+                    <h2>Categories</h2>
                 </div>
             </div>
 
@@ -475,6 +484,30 @@
         </div>
         </div>
     </div>
+<!-- =============================================news-Modal============================================-->
+
+
+    
+
+        <!-- Modal -->
+        <div class="modal fade" id="newsModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="bod" style="height: 300px">
+                    
+                        <!--POPUP-->
+                            
+                            
+                        <span> <a class="twitter-timeline" data-width="500" data-height="800" data-link-color="#E81C4F" href="https://twitter.com/INDIACSR?ref_src=twsrc%5Etfw">Tweets by INDIACSR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+                           
+                            
+                    
+                            
+                        <!-- END POPUP-->
+                    
+                </div>
+            </div>
+            </div>
+      
 
 <!-- =============================================Signup-Modal============================================-->
 

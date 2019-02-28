@@ -6,6 +6,11 @@
   margin-bottom: 30px !important;
 }
 
+#new-magic:hover{
+  cursor: pointer;
+  
+}
+
 .pt70 {
   padding-top: 70px !important;
 }
