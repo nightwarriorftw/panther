@@ -9,7 +9,7 @@ window.onload = function () {
     }
     , 0)
     
-    if(total === 7634) {
+    if(total === 764) {
         clearInterval(refreshIntervalId);
     }
 }
@@ -18,21 +18,21 @@ var c1=0, c2=0, c3=0, c4=0
 
 var updateCounter = function () {
     // ----COMPANIES
-    if(c1!==1678) {
+    if(c1!==167) {
         c1++;
         document.getElementById("companies").innerHTML = c1.toString() + `<span>Total No. of      <br> Companies      </span>`;
     }
     
     
     // -------AMOUNT
-    if(c2!==7634) {
+    if(c2!==763) {
         c2++;
         document.getElementById("amount").innerHTML = c2.toString() + `<span> Total Amount Spent<br> on CSR (INR Cr.)</span>`;
     }
     
     
     // --------PROJECTS
-    if(c3!==2789) {
+    if(c3!==278) {
         c3++;
         document.getElementById("projects").innerHTML = c3.toString() + `<span>Total No. of<br> CSR Projects</span>`;
     }
