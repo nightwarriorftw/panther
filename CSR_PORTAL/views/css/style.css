@@ -6,9 +6,8 @@
   margin-bottom: 30px !important;
 }
 
-#new-magic:hover{
+#new-magic:hover {
   cursor: pointer;
-  
 }
 
 .pt70 {
@@ -1271,7 +1270,7 @@ pointer #fh5co-services.border-bottom {
   height: 150px;
   width: 100%;
   border-radius: 20px;
-  background-image: url(./images/profile.jpg);
+  background-image: url(./images/WomenEmpowerment.jpg);
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
