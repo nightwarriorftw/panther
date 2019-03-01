@@ -6,7 +6,7 @@ route.get('/', (req, res) => {
     if(req.user) {
         res.render('profile', {user: req.user})
     } else {
-        res.redirect('/login')
+        res.redirect('/')
     }
 })
 
