@@ -305,6 +305,27 @@ section.section2 {
 	background-color: black;
 }
 
+.add-event{
+	color: white;
+	border-radius: 50%;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	transition: 0.4s;
+	font-size: 20px;
+	border: 0px;
+	
+	background: linear-gradient(  #007991,#78ffd6  );
+}
+.add-event:hover{
+	cursor: pointer;
+	font-size: 30px;
+	background: linear-gradient( #000046,#1cb5e0 );
+}
+
+}
+
+
 	  </style>
   </head>
 <body>
@@ -317,18 +338,20 @@ section.section2 {
 						<img src="http://images.contactmusic.com/newsimages/david_beckham_1133321.jpg" alt="">
 						<h1>David Beckham</h1>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-						<span>Follow</span>
+						<span onclick="location.href = 'http://localhost:4000/logout';" >LogOut</span>
 					</div>
 					<div class="col2 last">
 						<div class="grid clearfix">
 							<div class="col3 first">
-								<h1>694</h1>
+								<h1>04</h1>
 								<span>Initiated Events</span>
 							</div>
-							<div class="col3"><h1>452</h1>
-							<span>Contributed Events</span></div>
+							<div class="col3">
+								<h1>02</h1>
+								<span>Contributed Events</span></div>
 							<div class="col3 last">
-							<button onclick="location.href = 'http://localhost:4000/logout';" class="log-btn">LogOut
+								<button class="add-event">+</button><br>
+								<span>Add New Event</span>
 							</div>
 						</div>
 					</div>

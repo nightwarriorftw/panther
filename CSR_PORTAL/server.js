@@ -23,12 +23,16 @@ app.use(passport.session())
 
 app.set('view engine', 'hbs')
 
+app.use(express.static(path.join(__dirname, 'views', 'css')))
+app.use(express.static(path.join(__dirname, 'views', 'fonts'))
+app.use(express.static(path.join(__dirname, 'views', 'assets'))
+
 
 
 app.use('/signup', require('./routes/signup'))
 app.use('/loginNakli', require('./routes/login'))
-// app.use('/', require('./routes/login'))
-app.use('/', express.static(path.join(__dirname, 'views')))
+app.use('/', require('./routes/login'))
+// app.use('/', express.static(path.join(__dirname, 'views')))
 app.use('/profile', require('./routes/profile'))
 app.use('/logout', require('./routes/logout'))
 app.use('/api', require('./api'))

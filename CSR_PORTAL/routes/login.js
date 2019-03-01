@@ -9,7 +9,7 @@ route.get('/', (req, res) => {
     if(req.user) {
         res.redirect('/profile')
     } else {
-        res.render('login')
+        res.render('index')
     }
 })
 
