@@ -8,15 +8,27 @@ const db = new Sequelize ({
 
 const User = db.define('user' ,{
 
-    username: {
-        type: DT.STRING(50),
-        allowNull: false,
-        unique: true
-    }, 
+    name: {
+        type: DT.STRING(100),
+        allowNull: false
+    },
     email: {
         type: DT.STRING(100),
         allowNull: false
     }, 
+    address: {
+        type: DT.STRING(100),
+        allowNull: false
+    }, 
+    pincode: {
+        type: DT.STRING(100),
+        allowNull: false
+    }, 
+    username: {
+        type: DT.STRING(50),
+        allowNull: false,
+        unique: true
+    },  
     password: {
         type: DT.STRING, 
         allowNull: false

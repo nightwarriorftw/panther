@@ -6,7 +6,7 @@ const {
 
 route.get('/', (req, res) => {
     if(req.user) {
-        res.redirect('/profile')
+        res.redirect('/home')
     } else {
         res.render('signup')
     }
@@ -15,13 +15,17 @@ route.get('/', (req, res) => {
 route.post('/', async (req, res) => {
     try {
         const user = User.create({
+            name: req.body.name,
+            email: req.body.email,
+            address: req.body.address,
+            pincode: req.body.pincode,
             username: req.body.username,
             email: req.body.email,
             password: req.body.password
         })
-        res.redirect('/login')
+        res.redirect('/')
     } catch (e) {
-        res.render('signup')
+        res.render('home')
     }
 })
 

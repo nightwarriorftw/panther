@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- ========== Title ========== -->
+  <title>CSR Portal : Event Page</title>
+  <!-- ========== Favicon Ico ========== -->
+  <!--<link rel="icon" href="fav.ico">-->
+  <!-- ========== STYLESHEETS ========== -->
+  <!-- Bootstrap CSS -->
+  <link href="profile_assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Fonts Icon CSS -->
+  <link href="profile_assets/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="profile_assets/css/et-line.css" rel="stylesheet" />
+  <link href="profile_assets/css/ionicons.min.css" rel="stylesheet" />
+  <!-- Carousel CSS -->
+  <link href="profile_assets/css/owl.carousel.min.css" rel="stylesheet" />
+  <link href="profile_assets/css/owl.theme.default.min.css" rel="stylesheet" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="profile_assets/css/animate.min.css" />
+  <!-- Custom styles for this template -->
+  <link href="profile_assets/css/main.css" rel="stylesheet" />
+
+
+<style>
+.add-btn {
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	border: 0;
+	background: linear-gradient( #e65c00,#f9d423 );
+	transition: 0.4s;
+	font-size: 15px;
+  color: white;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.add-btn:hover{
+	background: linear-gradient( #314755,#26a0da );
+	font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+  <!--header start here -->
+  <header class="header navbar fixed-top navbar-expand-md">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">
+        <img src="profile_assets/img/satya.png" alt="Evento" />
+        <span class="logo-span"><b>CSR<br> Portal<b></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="lnr lnr-text-align-right"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+        <ul class=" nav navbar-nav menu">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Events Created</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Contributions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/logout">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="http://csrportal.forumotion.com" target="_blank">Forum</a>
+          </li>
+
+          <li>
+              <button type="button" class="add-btn" data-toggle="modal" data-target="#exampleModal">+</button>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--header end here-->
+  <script>
+        $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+    </script>
+
+
+    
+
+
+    
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Create Event</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<section class="contact-wrap">
+  <form action="" class="contact-form">
+    <div class="col-sm-6">
+      <div class="input-block">
+        <label for="">Event Name</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="input-block">
+        <label for="">Event Host Name</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block">
+        <label for="">Email Requirement</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+       <div class="col-sm-12">
+      <div class="input-block textarea">
+        <label for="">Event Description</label>
+        <textarea rows="3" type="text" class="form-control"></textarea>
+      </div>
+    </div>
+    
+    <div class="col-sm-12">
+      <div>
+        
+        
+    <select name="example">
+  <option value="Health">Health</option>
+  <option value="Armed Forces">Armed Forces</option>
+  <option value="Education">Education</option>
+      <option value="Education">Education</option>
+      <option value="Education">Envrionment</option>
+      <option value="Education">Gender Equality</option>
+      <option value="Education">Heritage</option>
+      <option value="Education">Relief Fund</option>
+      <option value="Education">Rural Development</option>
+      <option value="Education">Slum Area Development</option>
+      <option value="Education">Sports</option>
+      <option value="Education">Swachh Bharat</option>
+</select>
+       
+        
+        
+      </div>
+       <br>
+    </div>
+  </form>
+</section>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create Event</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- -->
+  <!--cover section slider -->
+  <section id="home" class="home-cover">
+    <div class="cover_slider owl-carousel owl-theme">
+      <div class="cover_item" style="background: url('profile_assets/img/background-3.jpg');">
+        <div class="slider_content">
+          <div class="slider-content-inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+
+                  <img style="margin-left:-200px; height: 350px; border-radius:50% ;" width="20000" src="profile_assets/img/profile.png">
+
+                </div>
+                <div class="col-md-8">
+                  <div class="profile-info" style="float:right; width: 100%">
+                    <h3 style="font-size: 50px; font-style: cursive; color: #f50136;">Utkarsh Ranjan Nigam<h3>
+                        <label style="font-size: 12px; font-family: sans-serif; color: #fff;" id="email">Email:</label><span
+                          id="email" class="font-size: 11px; font-family: cursive;color: #fff;">
+                          <!-- email --></span><br>
+                        <label style="font-size: 12px; font-family: sans-serif; color:  #fff;" id="address">Address:</label><span
+                          id="address" class="font-size: 11px; font-family: cursive;color: #fff;">
+                          <!-- address --></span><br>
+                        <label style="font-size: 12px; font-family: sans-serif; color:  #fff;" id="number">Phone
+                          Number:</label><span id="number" class="font-size: 11px; font-family: cursive;color: #fff;">
+                          <!-- Phone Number --></span><br>
+                  </div>
+                </div>
+              </div>
+    </section>
+
+                <!-- follow me template -->
+                
+                
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover_nav">
+      <ul class="cover_dots">
+        <li class="active" data="0"><span>1</span></li>
+        <li data="1"><span>2</span></li>
+        <li data="2"><span>3</span></li>
+      </ul>
+    </div>
+  </section>
+  <!--cover section slider end -->
+
+  <!--event info -->
+  <section class="pt100 pb100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-3  ">
+          <div class="icon_box_two">
+            <img src="profile_assets/img/event created.png" width="100px" height="100px">
+            <div class="content">
+              <h5 class="box_title">
+                Events created
+              </h5>
+              <p>
+                xyz
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3  ">
+          <div class="icon_box_two">
+            <img src="profile_assets/img/contribution.png" width="100px" height="100px">
+            <div class="content">
+              <h5 class="box_title">
+                Contributions
+              </h5>
+              <p>
+                xyz
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt100 pb100">
+    <div class="container">
+      <div class="section_title">
+        <h3 class="title">
+          Contributed Events
+        </h3>
+      </div>
+
+
+      <!--event features-->
+      <div class="row justify-content-center mt30">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-checkmark-circle"></i>
+            <div class="content">
+              <h4>#MeToo</h4>
+              <p>
+                Support Women.
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-checkmark-circle"></i>
+            <div class="content">
+              <h4>#MeToo</h4>
+              <p>
+                #MeToo
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-checkmark-circle"></i>
+            <div class="content">
+              <h4>#MeToo</h4>
+              <p>
+                #MeToo
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-checkmark-circle"></i>
+            <div class="content">
+              <h4>#MeToo</h4>
+              <p>
+                #MeToo
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="pt100 pb100">
+    <div class="container">
+      <div class="section_title">
+        <h3 class="title">
+          Initiated Events
+        </h3>
+      </div>
+
+
+      <!--event features-->
+      <div class="row justify-content-center mt30">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-checkmark-circle"></i>
+            <!-- <img src="profile_assets/img/allCard.png" height="100px"> -->
+            <div class="content">
+              <h4>Education for women</h4>
+              <p>
+                Educate Women
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-checkmark-circle"></i>
+            <div class="content">
+              <h4>Education for women</h4>
+              <p>
+                Educate Women
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-checkmark-circle"></i>
+            <div class="content">
+              <h4>Education for women</h4>
+              <p>
+                Educate Women
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-checkmark-circle"></i>
+            <div class="content">
+              <h4>Education for women</h4>
+              <p>
+                Educate Women
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--event features end-->
+    </div>
+  </section>
+  <!--about the event end -->
+
+  <!--event calender-->
+
+  <!--event calender end -->
+
+  <!--get tickets section -->
+
+  <!--get tickets section end-->
+
+  <div class="copyright_footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <p>
+            Created in Smart India Hackathon 2019
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--footer end -->
+
+  <!-- jquery -->
+
+  <script src="profile_assets/js/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="profile_assets/js/popper.js"></script>
+  <script src="profile_assets/js/bootstrap.min.js"></script>
+  <script src="profile_assets/js/waypoints.min.js"></script>
+  <!--slick carousel -->
+  <script src="profile_assets/js/owl.carousel.min.js"></script>
+  <!--parallax -->
+  <script src="profile_assets/js/parallax.min.js"></script>
+  <!--Counter up -->
+  <script src="profile_assets/js/jquery.counterup.min.js"></script>
+  <!--Counter down -->
+  <script src="profile_assets/js/jquery.countdown.min.js"></script>
+  <!-- WOW JS -->
+  <script src="profile_assets/js/wow.min.js"></script>
+  <!-- Custom js -->
+  <script src="profile_assets/js/main.js"></script>
+</body>
+
+</html>
