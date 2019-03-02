@@ -291,21 +291,24 @@ section.section2 {
 	}
 	
 }
-.log-btn{
-	border-radius: 25%;
-	background-color: red;
-	width: 100px;
-	height: 50px;
-	
-
+.add-btn {
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	border: 0;
+	background: linear-gradient( #e65c00,#f9d423 );
+	transition: 0.4s;
+	font-size: 15px;
+  color: white;
+}
+.add-btn:hover{
+	background: linear-gradient( #314755,#26a0da );
+	font-size: 25px;
+  color: white;
+  cursor: pointer;
 }
 
-.log-btn:hover{
-	color:white;
-	background-color: black;
-}
-
-	  </style>
+</style>
   </head>
 <body>
 <div class="container">
@@ -317,7 +320,8 @@ section.section2 {
 						<img src="http://images.contactmusic.com/newsimages/david_beckham_1133321.jpg" alt="">
 						<h1>David Beckham</h1>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-						<span>Follow</span>
+						<span onclick="location.href = 'http://localhost:4000/logout';" class="log-btn">LogOut</span>
+
 					</div>
 					<div class="col2 last">
 						<div class="grid clearfix">
@@ -328,7 +332,7 @@ section.section2 {
 							<div class="col3"><h1>452</h1>
 							<span>Contributed Events</span></div>
 							<div class="col3 last">
-							<button onclick="location.href = 'http://localhost:4000/logout';" class="log-btn">LogOut
+								<button class="add-btn">+</button>
 							</div>
 						</div>
 					</div>
@@ -356,6 +360,8 @@ section.section2 {
 			</div>
 		</section>
 	</div>
-</div>	
+</div>
+
+
 </body>
 </html>

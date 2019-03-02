@@ -23,7 +23,7 @@ app.use(passport.session())
 
 app.set('view engine', 'hbs')
 
-
+app.use('/static' ,express.static(path.join(__dirname, 'views')))
 
 app.use('/signup', require('./routes/signup'))
 app.use('/loginNakli', require('./routes/login'))
