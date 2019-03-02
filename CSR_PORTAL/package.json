@@ -1,0 +1,22 @@
+{
+  "name": "localstrategy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.42.0",
+    "sqlite3": "^4.0.6"
+  }
+}

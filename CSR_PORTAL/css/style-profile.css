@@ -1,0 +1,71 @@
+body { padding-top: 50px; }
+/*Jumbotron */
+.jumbotron {
+  padding-top: 70px;
+  height: 420px;
+  background: transparent;
+  background: url("https://images.unsplash.com/photo-1444090542259-0af8fa96557e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b263b22ca6e84d3d50bd86717beaa629") no-repeat center center fixed;
+  margin-bottom: 0;
+}
+
+.jumbotron .btn {
+  margin-right: 20px;
+  margin-top: 15px;
+  
+}
+
+
+
+/*about section*/
+
+section#about {
+  height: 420px;
+  background-color: #aaa;
+}
+
+section#about ul li {
+  list-style: none;
+  
+}
+section#about img {
+  padding-top: 30px;
+  border-radius: 50%;
+}
+
+/*portfolio*/
+
+section#portfolio {
+  background: url("https://images.unsplash.com/photo-1428999418909-363f8e091c50?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=262d45ecac286128f63a24248e60c583") no-repeat center center fixed;
+  text-align: center;
+  color: white;
+}
+
+
+/*contact section*/
+section#contact {
+  height: 300px;
+  background: url("https://images.unsplash.com/photo-1437651025703-2858c944e3eb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=42cead70c6b9ecf7212d794c2f5541dc") no-repeat center center fixed;
+}
+
+section#contact h1 {
+  padding-top: 55px;
+  color: #ccc;
+}
+
+/*footer*/
+footer {
+  background-color: gray;
+  height: 150px;
+}
+
+footer p {
+  color: #ccc;
+  font-size: 24px;
+  padding-top: 55px;
+}
+footer p a {
+  color: inherit;
+}
+footer p a:hover{
+  text-decoration: none;
+}
