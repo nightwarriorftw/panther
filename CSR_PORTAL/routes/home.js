@@ -5,11 +5,12 @@ const {
     User
 } = require('../db')
 
-route.post('/', 
-    passport.authenticate('local', {
-        successRedirect: '/profile',
-        failureRedirect: '/'
-    })
-) 
+route.get('/', (req, res) => {
+    if(req.user) {
+        res.redirect('/profile')
+    } else {
+        res.render('login')
+    }
+})
 
 module.exports = route

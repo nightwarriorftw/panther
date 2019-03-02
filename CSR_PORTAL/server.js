@@ -25,10 +25,10 @@ app.set('view engine', 'hbs')
 
 app.use(express.static(path.join(__dirname, 'views')))
 
+
+app.use('/', require('./routes/home'))
 app.use('/signup', require('./routes/signup'))
-app.use('/loginNakli', require('./routes/login'))
-app.use('/', require('./routes/login'))
-// app.use('/', express.static(path.join(__dirname, 'views')))
+app.use('/login', require('./routes/login')) 
 app.use('/profile', require('./routes/profile'))
 app.use('/logout', require('./routes/logout'))
 app.use('/api', require('./api'))
