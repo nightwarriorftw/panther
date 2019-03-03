@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSR Data Analysis</title>
+
+    
+  </head>
+
+  <body>
+    <div style="display: flex">
+      <div>
+        <div class="container" style=" height:400px; width:600px ">
+          <h4>CSR Snapshot (Values in Lakhs)</h4>
+          <hr />
+          <div>
+            <canvas id="myChart1"></canvas>
+          </div>
+        </div>
+
+        <div class="container" style=" height:400px; width:600px">
+          <h4>CSR Media Reports</h4>
+          <hr />
+          <div>
+            <canvas id="myChart2"></canvas>
+          </div>
+        </div>
+
+        <div class="container" style=" height:400px; width:600px  ">
+          <h4>CSR Spent: Top 10</h4>
+          <hr />
+          <div>
+            <canvas id="myChart3"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container" style=" height:400px; width:600px ">
+          <h4>CSR Budget Sector Wise</h4>
+          <hr />
+          <div>
+            <canvas id="myChart4"></canvas>
+          </div>
+        </div>
+
+        <div class="container" style=" height:400px; width:600px ">
+          <h4>CSR Budget State Wise</h4>
+          <hr />
+          <div>
+            <canvas id="myChart5"></canvas>
+          </div>
+        </div>
+
+        <div class="container" style=" height:400px; width:600px ">
+          <h4>Percentage Increment in CSR Expenditure</h4>
+          <hr />
+          <div>
+            <canvas id="myChart6"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <style>
+      .container {
+  width: 80%;
+  margin: 15px auto;
+  border: 1px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+  </style>
+  <script type="text/javascript">
+    var ctx = document.getElementById("myChart1").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "doughnut",
+  data: {
+    labels: [
+      "Health",
+      "Armed Forces",
+      "Education",
+      "Environment",
+      "Gender Equality",
+      "Heritage"
+    ],
+    datasets: [
+      {
+        backgroundColor: [
+          "#2ecc71",
+          "#3498db",
+          "#95a5a6",
+          "#9b59b6",
+          "#f1c40f",
+          "#e74c3c",
+          "#34495e"
+        ],
+        data: [45790, 55470, 40624, 8938, 10424, 17172]
+      }
+    ]
+  }
+});
+var ctx = document.getElementById("myChart2").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: [
+      "Health",
+      "Armed Forces",
+      "Education",
+      "Environment",
+      "Gender Equality",
+      "Heritage"
+    ],
+    datasets: [
+      {
+        backgroundColor: [
+          "#2ecc71",
+          "#3498db",
+          "#95a5a6",
+          "#9b59b6",
+          "#f1c40f",
+          "#e74c3c",
+          "#34495e"
+        ],
+        data: [9.55, 5.05, 4.24, 9.38, 7.42, 3.172]
+      }
+    ]
+  }
+});
+var ctx = document.getElementById("myChart3").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: [
+      "Maharashtra",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Karnataka",
+      "Gujarat",
+      "Rajasthan",
+      "Odisha",
+      "Delhi",
+      "West Bengal",
+      "Haryana"
+    ],
+    datasets: [
+      {
+        backgroundColor: [
+          "#2ecc71",
+          "#3498db",
+          "#95a5a6",
+          "#9b59b6",
+          "#f1c40f",
+          "#e74c3c",
+          "#34495e",
+          "#2ecc94",
+          "#3498db",
+          "#95a5a6"
+        ],
+        data: [144, 539, 414, 403, 313, 299, 252, 237, 194, 187]
+      }
+    ]
+  }
+});
+var ctx = document.getElementById("myChart4").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "polarArea",
+  data: {
+    labels: [
+      "Health 700 Cr : 1000 Cr",
+      "Armed Forces 500 Cr : 700 Cr",
+      "Education 100 Cr : 500 Cr",
+      "Environment 80 Cr : 100 Cr",
+      "Gender Equality 60 Cr : 80 Cr",
+      "Heritage 50 Cr : 60 Cr",
+      "Relief Fund 40 Cr : 50 Cr",
+      "Rural Development 30 Cr : 40 Cr",
+      "Slum Area Development 20 Cr : 30 Cr",
+      "Sports 10 Cr : 20 Cr",
+      "Swachh Bhara 1 Cr : 10 Cr"
+    ],
+
+    datasets: [
+      {
+        backgroundColor: [
+          "#ede7f6",
+          "#d1c4e9",
+          "#b39ddb",
+          "#9575cd",
+          "#7e57c2",
+          "#673ab7",
+          "#5e35b1",
+          "#512da8",
+          "#4527a0",
+          "#311b92",
+          "#311b92"
+        ],
+        data: [9.55, 5.05, 4.24, 9.38, 7.42, 3.172, 4.24, 9.38, 7.42, 3.172, 4]
+      }
+    ]
+  }
+});
+var ctx = document.getElementById("myChart5").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "pie",
+  data: {
+    labels: [
+      "Health",
+      "Armed Forces",
+      "Education",
+      "Environment",
+      "Gender Equality",
+      "Heritage"
+    ],
+    datasets: [
+      {
+        backgroundColor: [
+          "#2ecc71",
+          "#3498db",
+          "#95a5a6",
+          "#9b59b6",
+          "#f1c40f",
+          "#e74c3c",
+          "#34495e"
+        ],
+        data: [45790, 55470, 40624, 8938, 10424, 17172]
+      }
+    ]
+  }
+});
+var ctx = document.getElementById("myChart6").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: [
+      "Health",
+      "Armed Forces",
+      "Education",
+      "Environment",
+      "Gender Equality",
+      "Heritage"
+    ],
+    datasets: [
+      {
+        backgroundColor: [
+          "#2ecc71",
+          "#3498db",
+          "#95a5a6",
+          "#9b59b6",
+          "#f1c40f",
+          "#e74c3c",
+          "#34495e"
+        ],
+        data: [45.79, 55.47, 40.624, 89.38, 10.424, 17.172]
+      }
+    ]
+  }
+});
+
+  </script>
+  </body>
+</html>
