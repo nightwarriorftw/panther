@@ -27,8 +27,8 @@
 <style>
 .add-btn {
 	border-radius: 50%;
-	width: 55px;
-	height: 55px;
+	width: 60px;
+	height: 60px;
 	border: 0;
 	background: linear-gradient( #e65c00,#f9d423 );
 	transition: 0.4s;
@@ -42,6 +42,8 @@
 	font-size: 25px;
   color: white;
   cursor: pointer;
+  width: 85px;
+	height: 85px;
 }
 
 
@@ -67,7 +69,7 @@
       <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
         <ul class=" nav navbar-nav menu">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="userIndex">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#">Events Created</a>
@@ -83,7 +85,7 @@
           </li>
 
           <li>
-              <button type="button" class="add-btn" data-toggle="modal" data-target="#exampleModal">+</button>
+              <button type="button" class="add-btn" data-toggle="modal" data-target="#exampleModal">Add Event</button>
           </li>
 
 
@@ -207,16 +209,16 @@
                 </div>
                 <div class="col-md-8">
                   <div class="profile-info" style="float:right; width: 100%">
-                    <h3 style="font-size: 50px; font-style: cursive; color: #f50136;">Utkarsh Ranjan Nigam<h3>
+                    <h3 style="font-size: 50px; font-style: cursive; color: #f50136;">{{user.name}}<h3>
                         <label style="font-size: 12px; font-family: sans-serif; color: #fff;" id="email">Email:</label><span
                           id="email" class="font-size: 11px; font-family: cursive;color: #fff;">
-                          <!-- email --></span><br>
+                          {{user.email}}</span><br>
                         <label style="font-size: 12px; font-family: sans-serif; color:  #fff;" id="address">Address:</label><span
                           id="address" class="font-size: 11px; font-family: cursive;color: #fff;">
-                          <!-- address --></span><br>
+                          {{user.address}}</span><br>
                         <label style="font-size: 12px; font-family: sans-serif; color:  #fff;" id="number">Phone
                           Number:</label><span id="number" class="font-size: 11px; font-family: cursive;color: #fff;">
-                          <!-- Phone Number --></span><br>
+                         {{user.number}}</span><br>
                   </div>
                 </div>
               </div>
@@ -294,7 +296,7 @@
               <p>
                 Support Women.
               </p>
-              <a href="#">read more</a>
+              <a href="viewEvent.hbs">read more</a>
             </div>
           </div>
         </div>
@@ -307,7 +309,7 @@
               <p>
                 #MeToo
               </p>
-              <a href="#">read more</a>
+              <a href="viewEvent.hbs">read more</a>
             </div>
           </div>
         </div>
@@ -320,7 +322,7 @@
               <p>
                 #MeToo
               </p>
-              <a href="#">read more</a>
+              <a href="viewEvent">read more</a>
             </div>
           </div>
         </div>

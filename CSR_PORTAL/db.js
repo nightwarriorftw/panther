@@ -12,6 +12,10 @@ const User = db.define('user' ,{
         type: DT.STRING(100),
         allowNull: false
     },
+    number: {
+        type: DT.STRING,
+        allowNull: false
+    },
     email: {
         type: DT.STRING(100),
         allowNull: false
@@ -50,4 +54,3 @@ const User = db.define('user' ,{
 module.exports = {
     db, User
 }
-
