@@ -1,11 +1,13 @@
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+const sgMail = require("@sendgrid/mail");
+sgMail.setApiKey(
+  "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"
+);
 const msg = {
-    to: 'trigger@recipe.ifttt.com',
-    from: 'csrportalindia@gmail.com',
-    subject: '#IFTTT',
-    text: 'Smart India Hackathon Jitna hai',
-    html: 'Smart India Hackathon 2019 !!!'
+  to: "utkarshcomeon@gmail.com",
+  from: "mayank.singh081997@gmail.com",
+  subject: "Some Subject",
+  text: "Some Text",
+  html: "Smart India Hackathon 2019 !!!"
 };
 
 sgMail.send(msg);
