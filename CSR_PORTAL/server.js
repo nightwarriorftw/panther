@@ -1,6 +1,7 @@
 const express = require('express')
 const session = require('express-session')
 const path = require('path')
+const PORT = process.env.PORT || 4000
 
 const {
     db
@@ -38,7 +39,7 @@ app.use('/api', require('./api'))
 
 db.sync()
 .then(() => {
-    app.listen(4000, () => {
+    app.listen(PORT, () => {
         console.log("Server started on http://localhost:4000")
     })
 })
