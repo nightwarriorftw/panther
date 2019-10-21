@@ -39,18 +39,6 @@ const User = db.define('user' ,{
     }
 })
 
-// const Event = db.define('event', {
-//     name: {
-
-//     },
-//     venue: {
-
-//     },
-//     description: {
-
-//     },
-// })
-
 module.exports = {
     db, User
 }
