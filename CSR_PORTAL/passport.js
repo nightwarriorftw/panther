@@ -6,12 +6,10 @@ const {
 } = require('./db')
 
 passport.serializeUser((user, done) => {
-    console.log('===========   serialize')
     done(null, user.id)
   })
   
 passport.deserializeUser((userId, done) => {
-    console.log('==========  deserialize')
     User.findById(userId)
       .then((user) => done(null, user))
       .catch((err) => done(err))
@@ -23,12 +21,10 @@ passport.use( new LocalStrategy ((username, password, done) => {
     }).then((user) => {
 
         if(!user) {
-            console.log("No user")
             return done(null, false)
         }
 
         if(user.password !== password) {
-            console.log("Incorrect Password")
             return done(null, false)
         }
 
